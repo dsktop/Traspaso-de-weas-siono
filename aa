@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="panel-container">
+
+        <div id="panel">
+            <input min="1" max="4" type="number" id="valorResultado" />
+        </div>
+        <div id="panel-digitps" style="margin-left: 3rem; margin-top: 1rem;">
+            <div id="panel-numeros">
+                <button id="btn1" onclick="txtValor(1)">1</button>
+                <button id="btn2" onclick="txtValor(2)">2</button>
+    
+            </div>
+            <div id="panel-numeros2">
+                
+                <button id="btn3" onclick="txtValor(3)">3</button>
+                <button id="btn4" onclick="txtValor(4)">4</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    let input2 = true;
+            let signo = "";
+            let input = "";
+    function txtValor(numero) {
+        document.getElementById('valorResultado').value += numero;
+        console.log(document.getElementById('valorResultado').value);
+
+        if (document.getElementById('valorResultado').value.length == 4) {
+            document.querySelector("#btn1").disabled = true;
+            document.querySelector("#btn2").disabled = true;
+            document.querySelector("#btn3").disabled = true;
+            document.querySelector("#btn4").disabled = true;
+        }
+
+        
+            
+    }
+    
+</script>
+<script>
+    
+</script>
